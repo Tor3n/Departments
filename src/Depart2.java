@@ -2,9 +2,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class Depart2 {
-    private static String[] input = {"K1\\D\\L3\\T4","K1\\C\\L3\\T4","K1\\B\\K3\\K4","K1\\A\\K6\\K4","K2\\C\\A\\K4","K2\\C\\B\\K4","K3\\C\\B\\A","K3\\C\\B\\B"};
-    //private static String[] input = {"K1\\SK1","K1\\SK2","K1\\SK1\\SSK1","K1\\SK1\\SSK2","K2","K2\\SK1\\SSK1","K2\\SK1\\SSK2"};
-    //private static String[] input = {"2","6\\3","6\\2","6","6\\1"};
+
+    private static String[] input = {"K1\\SK1","K1\\SK2","K1\\SK1\\SSK1","K1\\SK1\\SSK2","K2","K2\\SK1\\SSK1","K2\\SK1\\SSK2"};
+
     private static ArrayList<String> result = new ArrayList<String>();
 
     public void setInput (String[] input) throws IOException {
