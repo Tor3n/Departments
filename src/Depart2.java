@@ -115,8 +115,6 @@ public class Depart2 {
                                 String a=subTotal.get(j);
                                 subTotal.set(j,subTotal.get(j+1));
                                 subTotal.set(j+1,a);
-                                //k=subTotal.get(j).split("\\\\").length+1;
-                                //break;
                             }
 
                         }
