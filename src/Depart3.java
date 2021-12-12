@@ -34,7 +34,7 @@ public class Depart3 {
     }
 
     //method that adds departmens if they are not present
-	private static void makeDepartmentsFull(TreeMap<String,TreeSet<String>> res, String inp){
+	private static void makeDepartmentsFull(String inp){
 		int lengthCounter =0;
 		int slashCounter=0;
 		for (int j = 0; j < inp.split("\\\\").length ; j++) {
@@ -52,11 +52,11 @@ public class Depart3 {
 		for(int i=0;i<input.length;i++) {
 			//if we have the rood dep. present
 			if(result.containsKey(input[i].split("\\\\")[0])){
-				makeDepartmentsFull(result,input[i]);
+				makeDepartmentsFull(input[i]);
 			} else {
 			//if we don't have it present, create a new treeset and make it full in case we have many departs
 			result.put(input[i].split("\\\\")[0],new TreeSet<String>(comp));
-			makeDepartmentsFull(result,input[i]);
+			makeDepartmentsFull(input[i]);
 			}
 		}
 
